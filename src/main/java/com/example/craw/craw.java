@@ -25,9 +25,9 @@ public class craw {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));    
 		String stream = br.readLine();
 		String line[] = stream.split(",");
-		category = line[0];
-    	location = line[1];
-    	province = line[2];	
+		category = line[0].toLowerCase();
+    	        location = line[1];
+    	        province = line[2];	
     	
     	String Filename = category+" "+location+" "+province;
     	FileWriter fw = new FileWriter("F:\\"+Filename+".csv");
