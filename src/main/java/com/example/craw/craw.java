@@ -67,11 +67,11 @@ public class craw {
     			shopTel[j] = shopTelTemp;
     			shopAddress[j] = shopAddressTempA+" "+shopAddressTempB+" "+shopAddressTempC+" "+shopAddressTempD;  
     			bw.write(RowKey[j]+","+category+","+shopName[j]+","+shopTel[j]+","+province+","+shopAddress[j]+"\n");
-    			System.out.println("Name  "+ shopName[j]);
-    			System.out.println("Address   "+shopAddress[j]);
-    			System.out.println("Tel   "+shopTel[j]);  			  
+    			//System.out.println("Name  "+ shopName[j]);
+    			//System.out.println("Address   "+shopAddress[j]);
+    			//System.out.println("Tel   "+shopTel[j]);  			  
     			RowKey[j] = province+"|"+category+"|"+"AA"+nf.format(j+1);
-				System.out.println(shopName[j]+" "+shopTel[j]+" "+shopAddress[j]);					
+			//System.out.println(shopName[j]+" "+shopTel[j]+" "+shopAddress[j]);					
     			j++;
     			bw.flush();			
     		}       	
